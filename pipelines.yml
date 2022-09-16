@@ -41,5 +41,6 @@ pipelines:
             # Pipeline state documentation: https://www.jfrog.com/confluence/display/JFROG/Creating+Stateful+Pipelines#CreatingStatefulPipelines-PipelineState
             - echo "Previous run ID is $prev_runid"
             - echo "HEllo Vraj From Jfrog"
+            - curl -H "X-JFrog-Art-Api:AKCp8nGQvrk2JSr1yNWhZmcqHqvGjLaghwK6ZdefWE7XP66CejUxsRpyV3Xhy5DE7jesbkboH" -O "https://finaldeploy.jfrog.io/artifactory/generic-generic-local/projects"
             
 
