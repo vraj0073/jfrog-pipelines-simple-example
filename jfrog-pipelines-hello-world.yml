@@ -41,14 +41,5 @@ pipelines:
             # Pipeline state documentation: https://www.jfrog.com/confluence/display/JFROG/Creating+Stateful+Pipelines#CreatingStatefulPipelines-PipelineState
             - echo "Previous run ID is $prev_runid"
             - echo "HEllo Vraj From Jfrog"
-
-      - name: p1_s2
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: p1_s1
-        execution:
-          onExecute:
-            # Demonstrates the availability of an env variable written to run state during p1_s1
-            - echo $current_runid
+            
 
